@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Nothing Cloths</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" class="logo">NOTHING.</a>
+        <div class="cart-icon" id="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Dedicated Product Section -->
+    <section class="product-page-container">
+        <div class="product-page-image">
+            <img id="detail-img" src="" alt="Product Image">
+        </div>
+        <div class="product-page-details">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Collection</a>
+            <h1 id="detail-title">Loading...</h1>
+            <p class="detail-price" id="detail-price">0 BDT</p>
+            
+            <div class="option-group">
+                <label>Selected Color: <span id="color-label"></span></label>
+                <div class="options" id="color-options"></div>
+            </div>
+
+            <div class="option-group">
+                <label>Select Size:</label>
+                <div class="options" id="size-options"></div>
+            </div>
+
+            <button id="add-to-cart-btn">Add To Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <span class="close-btn" id="close-cart">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Total: <span id="total-price">0</span> BDT</div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content checkout-content">
+            <span class="close-btn" id="close-checkout">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="Delivery Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Payment Method</option>
+                    <option value="bkash">bKash</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+                <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Nothing Cloths.</h3>
+            <p><i class="fas fa-phone"></i> 01XXXXXXXXX</p>
+            <p><i class="fas fa-envelope"></i> nothing.official@gmail.com</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

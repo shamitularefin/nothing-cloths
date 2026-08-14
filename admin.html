@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Nothing Cloths</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container { padding: 100px 50px; max-width: 1200px; margin: 0 auto; }
+        .order-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .order-table th, .order-table td { padding: 15px; border: 1px solid #333; text-align: left; }
+        .order-table th { background: #1a1a1a; }
+        .btn-accept { background: #166534; color: white; border: none; padding: 6px 12px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        .btn-decline { background: #991b1b; color: white; border: none; padding: 6px 12px; cursor: pointer; border-radius: 4px; font-weight: bold; margin-left: 5px; }
+        .status-badge { font-weight: bold; padding: 4px 8px; border-radius: 4px; display: inline-block; font-size: 0.85rem; }
+        .status-Pending { background: #854d0e; color: white; }
+        .status-Accepted { background: #166534; color: white; }
+        .status-Declined { background: #991b1b; color: white; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">NOTHING ADMIN.</a>
+    </nav>
+
+    <div class="admin-container">
+        <h1>Customer Orders Dashboard</h1>
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Details</th>
+                    <th>Items Purchased</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orders-list">
+                <tr><td colspan="6">Loading orders...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
